@@ -13,12 +13,30 @@
 
   </div>
 
-  <p>Click on the button for a surprise.</p>
-
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
-
-  <div id="image"></div>
+  <input class="search" type="text" placeholder="Enter zip code">
+  <button type="button" onClick="searchWeather()">Search Weather</button>
   
+  <div class="error-message"></div>
+
+  <div class="city"></div>
+
+  <div class="temp"></div>
+
+  <button onClick="handleSignIn()">Login</button>
+
+  <form onSubmit="handleMessageFormSubmit()" action="#">
+    Title:<br />
+    <input id="post-title"><br />
+    Body: <br />
+    <textarea area id="post-body"></textarea><br />
+    <button>Submit</button>
+    <div class="firebase-error-message"></div>
+  </form>
+
+  <div id="post-listing">
+    
+  </div>
+
 </body>
 
 </html>
